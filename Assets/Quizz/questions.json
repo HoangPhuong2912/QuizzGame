@@ -1,0 +1,823 @@
+{
+    "easy": [
+        {
+            "question": "What planet is known as the Red Planet?",
+            "answers": [
+                {
+                    "answer": "Venus"
+                },
+                {
+                    "answer": "Mars"
+                },
+                {
+                    "answer": "Jupiter"
+                },
+                {
+                    "answer": "Mercury"
+                }
+            ],
+            "correct": 1
+        },
+        {
+            "question": "What gas do humans need to breathe to survive?",
+            "answers": [
+                {
+                    "answer": "Oxygen"
+                },
+                {
+                    "answer": "Carbon dioxide"
+                },
+                {
+                    "answer": "Nitrogen"
+                },
+                {
+                    "answer": "Helium"
+                }
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Water freezes at what temperature on the Celsius scale?",
+            "answers": [
+                {
+                    "answer": "0°C"
+                },
+                {
+                    "answer": "10°C"
+                },
+                {
+                    "answer": "32°C"
+                },
+                {
+                    "answer": "100°C"
+                }
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Which organ in the human body pumps blood?",
+            "answers": [
+                {
+                    "answer": "Lungs"
+                },
+                {
+                    "answer": "Brain"
+                },
+                {
+                    "answer": "Heart"
+                },
+                {
+                    "answer": "Liver"
+                }
+            ],
+            "correct": 2
+        },
+        {
+            "question": "What part of the plant carries water from the roots to the leaves?",
+            "answers": [
+                {
+                    "answer": "Stem"
+                },
+                {
+                    "answer": "Flower"
+                },
+                {
+                    "answer": "Leaf"
+                },
+                {
+                    "answer": "Fruit"
+                }
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Which of the following is NOT a planet?",
+            "answers": [
+                {
+                    "answer": "Earth"
+                },
+                {
+                    "answer": "Pluto"
+                },
+                {
+                    "answer": "Mars"
+                },
+                {
+                    "answer": "Jupiter"
+                }
+            ],
+            "correct": 1,
+            "note": "Pluto was reclassified as a dwarf planet in 2006."
+        },
+        {
+            "question": "Which state of matter has a definite shape and volume?",
+            "answers": [
+                {
+                    "answer": "Solid"
+                },
+                {
+                    "answer": "Liquid"
+                },
+                {
+                    "answer": "Gas"
+                },
+                {
+                    "answer": "Plasma"
+                }
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Which animal is known as the largest mammal on Earth?",
+            "answers": [
+                {
+                    "answer": "Elephant"
+                },
+                {
+                    "answer": "Blue whale"
+                },
+                {
+                    "answer": "Giraffe"
+                },
+                {
+                    "answer": "Shark"
+                }
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Which celestial body provides light and heat to Earth?",
+            "answers": [
+                {
+                    "answer": "Moon"
+                },
+                {
+                    "answer": "Sun"
+                },
+                {
+                    "answer": "Mars"
+                },
+                {
+                    "answer": "Venus"
+                }
+            ],
+            "correct": 1
+        },
+        {
+            "question": "What is H2O commonly known as?",
+            "answers": [
+                {
+                    "answer": "Hydrogen"
+                },
+                {
+                    "answer": "Oxygen"
+                },
+                {
+                    "answer": "Salt"
+                },
+                {
+                    "answer": "Water"
+                }
+            ],
+            "correct": 3
+        },
+        {
+            "question": "What part of the human body controls thinking and movement?",
+            "answers": [
+                {
+                    "answer": "Lungs"
+                },
+                {
+                    "answer": "Brain"
+                },
+                {
+                    "answer": "Heart"
+                },
+                {
+                    "answer": "Stomach"
+                }
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Which planet is closest to the Sun?",
+            "answers": [
+                {
+                    "answer": "Mercury"
+                },
+                {
+                    "answer": "Venus"
+                },
+                {
+                    "answer": "Earth"
+                },
+                {
+                    "answer": "Mars"
+                }
+            ],
+            "correct": 0
+        },
+        {
+            "question": "What natural satellite orbits the Earth?",
+            "answers": [
+                {
+                    "answer": "The Moon"
+                },
+                {
+                    "answer": "The Sun"
+                },
+                {
+                    "answer": "Mars"
+                },
+                {
+                    "answer": "Venus"
+                }
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Which instrument is used to measure temperature?",
+            "answers": [
+                {
+                    "answer": "Barometer"
+                },
+                {
+                    "answer": "Thermometer"
+                },
+                {
+                    "answer": "Microscope"
+                },
+                {
+                    "answer": "Compass"
+                }
+            ],
+            "correct": 1
+        },
+        {
+            "question": "What type of energy do we get from the Sun?",
+            "answers": [
+                {
+                    "answer": "Chemical"
+                },
+                {
+                    "answer": "Solar"
+                },
+                {
+                    "answer": "Nuclear"
+                },
+                {
+                    "answer": "Mechanical"
+                }
+            ],
+            "correct": 1
+        }
+    ],
+    "medium": [
+        {
+            "question": "Which gas do plants absorb during photosynthesis?",
+            "answers": [
+                {
+                    "answer": "Oxygen"
+                },
+                {
+                    "answer": "Carbon dioxide"
+                },
+                {
+                    "answer": "Nitrogen"
+                },
+                {
+                    "answer": "Hydrogen"
+                }
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Which part of the cell contains genetic material?",
+            "answers": [
+                {
+                    "answer": "Cytoplasm"
+                },
+                {
+                    "answer": "Nucleus"
+                },
+                {
+                    "answer": "Cell membrane"
+                },
+                {
+                    "answer": "Mitochondria"
+                }
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Sound travels fastest through which medium?",
+            "answers": [
+                {
+                    "answer": "Air"
+                },
+                {
+                    "answer": "Water"
+                },
+                {
+                    "answer": "Steel"
+                },
+                {
+                    "answer": "Vacuum"
+                }
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Which law explains that for every action, there is an equal and opposite reaction?",
+            "answers": [
+                {
+                    "answer": "Newton's First Law"
+                },
+                {
+                    "answer": "Newton's Second Law"
+                },
+                {
+                    "answer": "Newton's Third Law"
+                },
+                {
+                    "answer": "Law of Conservation of Energy"
+                }
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Which planet has the most moons in the solar system?",
+            "answers": [
+                {
+                    "answer": "Saturn"
+                },
+                {
+                    "answer": "Jupiter"
+                },
+                {
+                    "answer": "Mars"
+                },
+                {
+                    "answer": "Uranus"
+                }
+            ],
+            "correct": 0,
+            "note": "As of 2025, Saturn leads with over 145 confirmed moons."
+        },
+        {
+            "question": "Which process changes liquid water into water vapor?",
+            "answers": [
+                {
+                    "answer": "Condensation"
+                },
+                {
+                    "answer": "Evaporation"
+                },
+                {
+                    "answer": "Freezing"
+                },
+                {
+                    "answer": "Melting"
+                }
+            ],
+            "correct": 1
+        },
+        {
+            "question": "What is the main gas found in Earth’s atmosphere?",
+            "answers": [
+                {
+                    "answer": "Oxygen"
+                },
+                {
+                    "answer": "Nitrogen"
+                },
+                {
+                    "answer": "Carbon dioxide"
+                },
+                {
+                    "answer": "Hydrogen"
+                }
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Which part of the human eye controls the amount of light entering it?",
+            "answers": [
+                {
+                    "answer": "Lens"
+                },
+                {
+                    "answer": "Cornea"
+                },
+                {
+                    "answer": "Iris"
+                },
+                {
+                    "answer": "Retina"
+                }
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Which type of rock is formed from cooled magma or lava?",
+            "answers": [
+                {
+                    "answer": "Sedimentary"
+                },
+                {
+                    "answer": "Igneous"
+                },
+                {
+                    "answer": "Metamorphic"
+                },
+                {
+                    "answer": "Fossil"
+                }
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Which blood cells help our body fight infection?",
+            "answers": [
+                {
+                    "answer": "Red blood cells"
+                },
+                {
+                    "answer": "White blood cells"
+                },
+                {
+                    "answer": "Platelets"
+                },
+                {
+                    "answer": "Plasma"
+                }
+            ],
+            "correct": 1
+        },
+        {
+            "question": "What form of energy is stored in food and fuel?",
+            "answers": [
+                {
+                    "answer": "Kinetic energy"
+                },
+                {
+                    "answer": "Thermal energy"
+                },
+                {
+                    "answer": "Chemical energy"
+                },
+                {
+                    "answer": "Light energy"
+                }
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Which metal is liquid at room temperature?",
+            "answers": [
+                {
+                    "answer": "Mercury"
+                },
+                {
+                    "answer": "Lead"
+                },
+                {
+                    "answer": "Copper"
+                },
+                {
+                    "answer": "Aluminum"
+                }
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Which force keeps the planets orbiting around the Sun?",
+            "answers": [
+                {
+                    "answer": "Magnetic force"
+                },
+                {
+                    "answer": "Electric force"
+                },
+                {
+                    "answer": "Frictional force"
+                },
+                {
+                    "answer": "Gravitational force"
+                }
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Which unit is used to measure electrical current?",
+            "answers": [
+                {
+                    "answer": "Volt"
+                },
+                {
+                    "answer": "Ampere"
+                },
+                {
+                    "answer": "Watt"
+                },
+                {
+                    "answer": "Ohm"
+                }
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Which planet is famous for its Great Red Spot?",
+            "answers": [
+                {
+                    "answer": "Jupiter"
+                },
+                {
+                    "answer": "Neptune"
+                },
+                {
+                    "answer": "Venus"
+                },
+                {
+                    "answer": "Saturn"
+                }
+            ],
+            "correct": 0,
+            "note": "The Great Red Spot is a massive storm that has lasted for centuries."
+        }
+    ],
+    "hard": [
+        {
+            "question": "What is the chemical formula for table salt?",
+            "answers": [
+                {
+                    "answer": "NaCl"
+                },
+                {
+                    "answer": "H2O"
+                },
+                {
+                    "answer": "CO2"
+                },
+                {
+                    "answer": "CaCO3"
+                }
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Which part of the electromagnetic spectrum has the shortest wavelength?",
+            "answers": [
+                {
+                    "answer": "Infrared"
+                },
+                {
+                    "answer": "Ultraviolet"
+                },
+                {
+                    "answer": "Gamma rays"
+                },
+                {
+                    "answer": "Microwaves"
+                }
+            ],
+            "correct": 2,
+            "note": "Gamma rays are the most energetic form of electromagnetic radiation."
+        },
+        {
+            "question": "What is the powerhouse of the cell?",
+            "answers": [
+                {
+                    "answer": "Nucleus"
+                },
+                {
+                    "answer": "Mitochondria"
+                },
+                {
+                    "answer": "Ribosome"
+                },
+                {
+                    "answer": "Golgi apparatus"
+                }
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Which law states that pressure and volume of a gas are inversely proportional at constant temperature?",
+            "answers": [
+                {
+                    "answer": "Boyle's Law"
+                },
+                {
+                    "answer": "Charles's Law"
+                },
+                {
+                    "answer": "Newton's Law"
+                },
+                {
+                    "answer": "Pascal's Law"
+                }
+            ],
+            "correct": 0
+        },
+        {
+            "question": "What is the main function of chlorophyll in plants?",
+            "answers": [
+                {
+                    "answer": "Absorb water"
+                },
+                {
+                    "answer": "Produce oxygen"
+                },
+                {
+                    "answer": "Absorb light energy for photosynthesis"
+                },
+                {
+                    "answer": "Transport nutrients"
+                }
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Which scientist proposed the three laws of motion?",
+            "answers": [
+                {
+                    "answer": "Albert Einstein"
+                },
+                {
+                    "answer": "Isaac Newton"
+                },
+                {
+                    "answer": "Galileo Galilei"
+                },
+                {
+                    "answer": "Niels Bohr"
+                }
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Which element has the atomic number 6?",
+            "answers": [
+                {
+                    "answer": "Nitrogen"
+                },
+                {
+                    "answer": "Carbon"
+                },
+                {
+                    "answer": "Oxygen"
+                },
+                {
+                    "answer": "Helium"
+                }
+            ],
+            "correct": 1
+        },
+        {
+            "question": "What process in the water cycle is responsible for cloud formation?",
+            "answers": [
+                {
+                    "answer": "Evaporation"
+                },
+                {
+                    "answer": "Condensation"
+                },
+                {
+                    "answer": "Precipitation"
+                },
+                {
+                    "answer": "Transpiration"
+                }
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Which organelle is responsible for protein synthesis?",
+            "answers": [
+                {
+                    "answer": "Ribosome"
+                },
+                {
+                    "answer": "Chloroplast"
+                },
+                {
+                    "answer": "Mitochondria"
+                },
+                {
+                    "answer": "Lysosome"
+                }
+            ],
+            "correct": 0
+        },
+        {
+            "question": "What type of energy transformation occurs in photosynthesis?",
+            "answers": [
+                {
+                    "answer": "Light to chemical"
+                },
+                {
+                    "answer": "Chemical to thermal"
+                },
+                {
+                    "answer": "Thermal to kinetic"
+                },
+                {
+                    "answer": "Mechanical to potential"
+                }
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Which scientist developed the periodic table of elements?",
+            "answers": [
+                {
+                    "answer": "Marie Curie"
+                },
+                {
+                    "answer": "Dmitri Mendeleev"
+                },
+                {
+                    "answer": "Ernest Rutherford"
+                },
+                {
+                    "answer": "John Dalton"
+                }
+            ],
+            "correct": 1
+        },
+        {
+            "question": "In genetics, which term describes different forms of the same gene?",
+            "answers": [
+                {
+                    "answer": "Chromosomes"
+                },
+                {
+                    "answer": "Alleles"
+                },
+                {
+                    "answer": "Genotypes"
+                },
+                {
+                    "answer": "Phenotypes"
+                }
+            ],
+            "correct": 1
+        },
+        {
+            "question": "What is the acceleration due to gravity on Earth?",
+            "answers": [
+                {
+                    "answer": "9.8 m/s²"
+                },
+                {
+                    "answer": "10.8 m/s²"
+                },
+                {
+                    "answer": "8.8 m/s²"
+                },
+                {
+                    "answer": "7.8 m/s²"
+                }
+            ],
+            "correct": 0
+        },
+        {
+            "question": "What is the primary greenhouse gas produced by human activity?",
+            "answers": [
+                {
+                    "answer": "Oxygen"
+                },
+                {
+                    "answer": "Nitrogen"
+                },
+                {
+                    "answer": "Carbon dioxide"
+                },
+                {
+                    "answer": "Helium"
+                }
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Which of the following subatomic particles has no electric charge?",
+            "answers": [
+                {
+                    "answer": "Proton"
+                },
+                {
+                    "answer": "Electron"
+                },
+                {
+                    "answer": "Neutron"
+                },
+                {
+                    "answer": "Positron"
+                }
+            ],
+            "correct": 2,
+            "note": "Neutrons are neutral particles found in the atomic nucleus."
+        }
+    ]
+}
