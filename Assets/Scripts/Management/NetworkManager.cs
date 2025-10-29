@@ -6,11 +6,11 @@ using Photon.Pun;
 
 public class NetworkManager : MonoBehaviourPunCallbacks
 {
-    public static NetworkManager Instance {get; private set;}
+    public static NetworkManager Instance { get; private set; }
 
     private void Awake()
     {
-        if(Instance != null && Instance != this)
+        if (Instance != null && Instance != this)
         {
             gameObject.SetActive(false);
             return;
@@ -57,7 +57,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
     public override void OnConnectedToMaster()
     {
-        Debug.Log("Conexão bem sucedida");
+        Debug.Log("Connect successfully");
     }
 
     public void LeftLobby()
@@ -66,7 +66,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     }
 
     [PunRPC]
-    public void StartGame(string  sceneName)
+    public void StartGame(string sceneName)
     {
         PhotonNetwork.LoadLevel(sceneName);
     }

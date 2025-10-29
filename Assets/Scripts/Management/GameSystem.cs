@@ -156,7 +156,6 @@ public class GameSystem : MonoBehaviourPunCallbacks
         int maxRed = quizzTiles;
         int maxEvents = Mathf.RoundToInt((maxTiles)/4);
         
-        //Preenche as casas Verdes
         while(tilesCount < maxGreen)
         {
             tileIndex = Random.Range(0, maxTiles);
@@ -167,7 +166,6 @@ public class GameSystem : MonoBehaviourPunCallbacks
                 tilesCount++;
             }
         }
-        //Preenche as casas Amarelas
         tilesCount = 0;
         while(tilesCount < maxYellow)
         {
@@ -180,7 +178,6 @@ public class GameSystem : MonoBehaviourPunCallbacks
             }
         }
 
-        //Preenche as casas Vermelhas
         tilesCount = 0;
         while(tilesCount < maxRed)
         {
@@ -244,6 +241,6 @@ public class GameSystem : MonoBehaviourPunCallbacks
     void EndGame(string playerName)
     {
         _winnerWarning.gameObject.SetActive(true);
-        _winnerName.text = "Ganhador(a): " + playerName;
+        _winnerName.text = "Winner: " + playerName;
     }
 }

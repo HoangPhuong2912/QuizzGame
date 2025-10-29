@@ -1,8 +1,6 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using System.Linq;
 
 public class QuizzManagement : MonoBehaviour
 {
@@ -23,22 +21,22 @@ public class QuizzManagement : MonoBehaviour
     private static Question currentQuestion;
     private string correctAnswer;
     void Awake()
-    {   
-        if(easyQuestionsNotUsed == null || easyQuestionsNotUsed.Count == 0)
+    {
+        if (easyQuestionsNotUsed == null || easyQuestionsNotUsed.Count == 0)
         {
             easyQuestionsNotUsed = QuestionReader.easyQuestionsList;
         }
 
-        if(mediumQuestionsNotUsed == null || mediumQuestionsNotUsed.Count == 0)
+        if (mediumQuestionsNotUsed == null || mediumQuestionsNotUsed.Count == 0)
         {
             mediumQuestionsNotUsed = QuestionReader.mediumQuestionsList;
         }
 
-        if(hardQuestionsNotUsed == null || hardQuestionsNotUsed.Count == 0)
+        if (hardQuestionsNotUsed == null || hardQuestionsNotUsed.Count == 0)
         {
             hardQuestionsNotUsed = QuestionReader.hardQuestionsList;
         }
-        
+
     }
 
     public void BuildQuizz()
@@ -58,7 +56,7 @@ public class QuizzManagement : MonoBehaviour
         int questionIndex = Random.Range(0, easyQuestionsNotUsed.Count);
         currentQuestion = easyQuestionsNotUsed[questionIndex];
         easyQuestionsNotUsed.RemoveAt(questionIndex);
-        
+
     }
 
     public void GetMediumRandomQuestion()
@@ -77,7 +75,7 @@ public class QuizzManagement : MonoBehaviour
 
     public void CheckAnswer(Text answer)
     {
-        if(answer.text == correctAnswer)
+        if (answer.text == correctAnswer)
         {
             PlayerPiece.me.answeredRight = true;
         }

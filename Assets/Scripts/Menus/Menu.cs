@@ -8,15 +8,18 @@ public class Menu : MonoBehaviourPunCallbacks
 {
     [SerializeField] private MenuEntrance _menuEntrance;
     [SerializeField] private MenuLobby _menuLobby;
+    [SerializeField] private GameObject _menuLoading;
 
     void Start()
     {
         _menuEntrance.gameObject.SetActive(false);
         _menuLobby.gameObject.SetActive(false);
+        _menuLoading.SetActive(true);
     }
 
     public override void OnConnectedToMaster()
     {
+        _menuLoading.SetActive(false);
         _menuEntrance.gameObject.SetActive(true);
     }
 
@@ -47,7 +50,7 @@ public class Menu : MonoBehaviourPunCallbacks
 
     public void StartGame(string sceneName)
     {
-        NetworkManager.Instance.photonView.RPC("StartGame", RpcTarget.All, sceneName); 
+        NetworkManager.Instance.photonView.RPC("StartGame", RpcTarget.All, sceneName);
     }
 
 }

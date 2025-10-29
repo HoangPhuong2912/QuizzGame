@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using Photon.Pun;
 
 public class EventsManagement : MonoBehaviourPunCallbacks
@@ -30,7 +27,7 @@ public class EventsManagement : MonoBehaviourPunCallbacks
             case 1:
                 Debug.Log("Lost the Turn");
                 PlayerPiece.me.isMoving = false;
-                PlayerPiece.me.ResetItensProps();
+                PlayerPiece.me.ResetItemsProps();
                 GameSystem.Instance.photonView.RPC("NextPlayer", RpcTarget.All);
                 break;
 

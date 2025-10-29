@@ -1,6 +1,56 @@
 {
     "easy": [
         {
+            "question": "What gas do humans exhale when they breathe out?",
+            "answers": [
+                "Oxygen",
+                "Carbon Dioxide",
+                "Nitrogen",
+                "Hydrogen"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Which planet is famous for its rings?",
+            "answers": [
+                "Jupiter",
+                "Venus",
+                "Saturn",
+                "Mars"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "What is H2O commonly known as?",
+            "answers": [
+                "Oxygen",
+                "Hydrogen",
+                "Water",
+                "Carbon Dioxide"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Which part of the plant makes food using sunlight?",
+            "answers": [
+                "Roots",
+                "Stem",
+                "Leaves",
+                "Flowers"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "What instrument measures temperature?",
+            "answers": [
+                "Barometer",
+                "Thermometer",
+                "Speedometer",
+                "Altimeter"
+            ],
+            "correct": 1
+        },
+        {
             "question": "What planet is known as the Red Planet?",
             "answers": [
                 {
@@ -274,6 +324,57 @@
     ],
     "medium": [
         {
+            "question": "Which of these materials is a good conductor of electricity?",
+            "answers": [
+                "Plastic",
+                "Glass",
+                "Copper",
+                "Wood"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "What type of energy transformation occurs when you use a battery-powered flashlight?",
+            "answers": [
+                "Chemical to Light",
+                "Light to Chemical",
+                "Heat to Electrical",
+                "Mechanical to Light"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Why do we see lightning before we hear thunder?",
+            "answers": [
+                "Sound travels faster than light",
+                "Light travels faster than sound",
+                "Thunder happens first",
+                "Lightning is closer"
+            ],
+            "correct": 1,
+            "note": "Light travels much faster than sound, so we see the flash before hearing the thunder."
+        },
+        {
+            "question": "Which organ in the human body is primarily responsible for filtering blood?",
+            "answers": [
+                "Liver",
+                "Kidney",
+                "Heart",
+                "Lungs"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "What is the main component of the Sun?",
+            "answers": [
+                "Iron",
+                "Helium",
+                "Hydrogen",
+                "Oxygen"
+            ],
+            "correct": 2
+        },
+        {
             "question": "Which gas do plants absorb during photosynthesis?",
             "answers": [
                 {
@@ -383,7 +484,7 @@
             "correct": 1
         },
         {
-            "question": "What is the main gas found in Earth’s atmosphere?",
+            "question": "What is the main gas found in Earth's atmosphere?",
             "answers": [
                 {
                     "answer": "Oxygen"
@@ -818,6 +919,59 @@
             ],
             "correct": 2,
             "note": "Neutrons are neutral particles found in the atomic nucleus."
+        },
+        {
+            "question": "What law states that pressure and volume of a gas are inversely proportional at constant temperature?",
+            "answers": [
+                "Boyle's Law",
+                "Charles's Law",
+                "Newton's Law",
+                "Dalton's Law"
+            ],
+            "correct": 0,
+            "note": "Boyle's Law: P x V = constant when temperature remains constant."
+        },
+        {
+            "question": "In genetics, what term describes different forms of the same gene?",
+            "answers": [
+                "Chromosomes",
+                "Alleles",
+                "Genotypes",
+                "Phenotypes"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "What is the process called when a solid turns directly into a gas?",
+            "answers": [
+                "Evaporation",
+                "Condensation",
+                "Sublimation",
+                "Deposition"
+            ],
+            "correct": 2,
+            "note": "Dry ice (solid CO₂) is a common example of sublimation."
+        },
+        {
+            "question": "What phenomenon explains the bending of light as it passes from air into water?",
+            "answers": [
+                "Reflection",
+                "Refraction",
+                "Diffraction",
+                "Dispersion"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Which scientist proposed that matter cannot be created or destroyed in a chemical reaction?",
+            "answers": [
+                "Isaac Newton",
+                "Antoine Lavoisier",
+                "Albert Einstein",
+                "John Dalton"
+            ],
+            "correct": 1,
+            "note": "Lavoisier's Law of Conservation of Mass revolutionized chemistry."
         }
     ]
 }
