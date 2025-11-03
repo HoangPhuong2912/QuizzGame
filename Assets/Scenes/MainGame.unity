@@ -1080,7 +1080,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Nome do Jogador
+  m_Text: Player List
 --- !u!222 &396153403
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2523,7 +2523,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c052f3a09748d854fb527b4480983640, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: Dado Duplo
+  itemName: Double Dice
   itemQuantity: 2
   itemNameText: {fileID: 813643210}
   itemQuantityText: {fileID: 735838002}
@@ -6530,7 +6530,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c052f3a09748d854fb527b4480983640, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: "Dado Amaldi\xE7oado"
+  itemName: Curse Dice
   itemQuantity: 2
   itemNameText: {fileID: 1341898526}
   itemQuantityText: {fileID: 1597606584}
@@ -6740,11 +6740,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8556842565935894651, guid: 7482f0ef436b952428413f32f7ebe539, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.65
+      value: -2.7
       objectReference: {fileID: 0}
     - target: {fileID: 8556842565935894651, guid: 7482f0ef436b952428413f32f7ebe539, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.89243
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 8556842565935894651, guid: 7482f0ef436b952428413f32f7ebe539, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7742,7 +7742,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8556842565935894651, guid: 7482f0ef436b952428413f32f7ebe539, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.36
+      value: 5.23
       objectReference: {fileID: 0}
     - target: {fileID: 8556842565935894651, guid: 7482f0ef436b952428413f32f7ebe539, type: 3}
       propertyPath: m_LocalPosition.y
@@ -7750,7 +7750,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8556842565935894651, guid: 7482f0ef436b952428413f32f7ebe539, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.95
+      value: 7.78
       objectReference: {fileID: 0}
     - target: {fileID: 8556842565935894651, guid: 7482f0ef436b952428413f32f7ebe539, type: 3}
       propertyPath: m_LocalRotation.w
