@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class GameSystem : MonoBehaviourPunCallbacks
 {
-    public static GameSystem Instance {get; private set;} 
+    public static GameSystem Instance { get; private set; }
 
     #region Object Management
     [SerializeField] public Route currentRoute;
@@ -21,11 +21,11 @@ public class GameSystem : MonoBehaviourPunCallbacks
     #endregion
 
     #region Lists
-    private List<PlayerPiece> _players;   
+    private List<PlayerPiece> _players;
     public List<PlayerPiece> Players { get => _players; private set => _players = value; }
     public Transform[] Spawns { get => _spawns; private set => _spawns = value; }
     [SerializeField] public Color[] playerColors;
-    
+
     [SerializeField] protected Sprite[] DiceSprites;
     public List<Renderer> coloredTiles = new List<Renderer>();
     #endregion
@@ -41,7 +41,7 @@ public class GameSystem : MonoBehaviourPunCallbacks
     #endregion
     private void Awake()
     {
-        if(Instance != null && Instance != this)
+        if (Instance != null && Instance != this)
         {
             gameObject.SetActive(false);
             return;
@@ -54,8 +54,8 @@ public class GameSystem : MonoBehaviourPunCallbacks
     {
         _players = new List<PlayerPiece>();
         photonView.RPC("AddPlayer", RpcTarget.AllBuffered);
-        
-        CreateQuizzTiles();  
+
+        CreateQuizzTiles();
         _quizzManagement.gameObject.SetActive(false);
         _winnerWarning.gameObject.SetActive(false);
         playerInventory.SetActive(false);
@@ -64,11 +64,11 @@ public class GameSystem : MonoBehaviourPunCallbacks
 
     private void Update()
     {
-        if(activePlayer != null)
+        if (activePlayer != null)
         {
             playerTurnText.text = activePlayer.NickName;
         }
-        
+
     }
 
     #region Start Game
@@ -93,10 +93,10 @@ public class GameSystem : MonoBehaviourPunCallbacks
         _dice.img.sprite = DiceSprites[number];
     }
 
-    
+
     public void UseItemWarning(string itemName)
     {
-        photonView.RPC("UseItemWarningMultiplayer", RpcTarget.All, itemName);  
+        photonView.RPC("UseItemWarningMultiplayer", RpcTarget.All, itemName);
     }
 
     [PunRPC]
@@ -111,7 +111,7 @@ public class GameSystem : MonoBehaviourPunCallbacks
     private void AddPlayer()
     {
         _playersInGame++;
-        if( _playersInGame == PhotonNetwork.PlayerList.Length)
+        if (_playersInGame == PhotonNetwork.PlayerList.Length)
         {
             CreatePlayer();
         }
@@ -122,7 +122,7 @@ public class GameSystem : MonoBehaviourPunCallbacks
         var playerObject = PhotonNetwork.Instantiate(_prefabLocation, _spawns[0].position, Quaternion.identity);
         var player = playerObject.GetComponent<PlayerPiece>();
 
-        player.photonView.RPC("Initialize", RpcTarget.All, PhotonNetwork.LocalPlayer);  
+        player.photonView.RPC("Initialize", RpcTarget.All, PhotonNetwork.LocalPlayer);
     }
 
     [PunRPC]
@@ -130,10 +130,10 @@ public class GameSystem : MonoBehaviourPunCallbacks
     {
         activePlayer = null;
         playerIndexTurn++;
-        if(playerIndexTurn >= PhotonNetwork.PlayerList.Length) playerIndexTurn = 0;
+        if (playerIndexTurn >= PhotonNetwork.PlayerList.Length) playerIndexTurn = 0;
         activePlayer = PhotonNetwork.PlayerList[playerIndexTurn];
     }
-    
+
     #endregion
 
     public void StartDice()
@@ -144,22 +144,22 @@ public class GameSystem : MonoBehaviourPunCallbacks
 
     #region TileEventsFunctions
     public void CreateQuizzTiles()
-    {   
+    {
         coloredTiles.Clear();
         int tilesCount = 0;
         int tileIndex;
-        int maxTiles =  currentRoute.childTileColorList.Count;
-        int quizzTiles = Mathf.RoundToInt((maxTiles/2)/3);
+        int maxTiles = currentRoute.childTileColorList.Count;
+        int quizzTiles = Mathf.RoundToInt((maxTiles / 2) / 3);
 
         int maxGreen = quizzTiles;
         int maxYellow = quizzTiles;
         int maxRed = quizzTiles;
-        int maxEvents = Mathf.RoundToInt((maxTiles)/4);
-        
-        while(tilesCount < maxGreen)
+        int maxEvents = Mathf.RoundToInt((maxTiles) / 4);
+
+        while (tilesCount < maxGreen)
         {
             tileIndex = Random.Range(0, maxTiles);
-            if(!coloredTiles.Contains(currentRoute.childTileColorList[tileIndex]))
+            if (!coloredTiles.Contains(currentRoute.childTileColorList[tileIndex]))
             {
                 currentRoute.childTileColorList[tileIndex].material.color = Color.green;
                 coloredTiles.Add(currentRoute.childTileColorList[tileIndex]);
@@ -167,10 +167,10 @@ public class GameSystem : MonoBehaviourPunCallbacks
             }
         }
         tilesCount = 0;
-        while(tilesCount < maxYellow)
+        while (tilesCount < maxYellow)
         {
             tileIndex = Random.Range(0, maxTiles);
-            if(!coloredTiles.Contains(currentRoute.childTileColorList[tileIndex]))
+            if (!coloredTiles.Contains(currentRoute.childTileColorList[tileIndex]))
             {
                 currentRoute.childTileColorList[tileIndex].material.color = Color.yellow;
                 coloredTiles.Add(currentRoute.childTileColorList[tileIndex]);
@@ -179,10 +179,10 @@ public class GameSystem : MonoBehaviourPunCallbacks
         }
 
         tilesCount = 0;
-        while(tilesCount < maxRed)
+        while (tilesCount < maxRed)
         {
             tileIndex = Random.Range(0, maxTiles);
-            if(!coloredTiles.Contains(currentRoute.childTileColorList[tileIndex]))
+            if (!coloredTiles.Contains(currentRoute.childTileColorList[tileIndex]))
             {
                 currentRoute.childTileColorList[tileIndex].material.color = Color.red;
                 coloredTiles.Add(currentRoute.childTileColorList[tileIndex]);
@@ -190,12 +190,11 @@ public class GameSystem : MonoBehaviourPunCallbacks
             }
         }
 
-        //Preenche as casas Com Eventos
         tilesCount = 0;
-        while(tilesCount < maxEvents)
+        while (tilesCount < maxEvents)
         {
             tileIndex = Random.Range(0, maxTiles);
-            if(!coloredTiles.Contains(currentRoute.childTileColorList[tileIndex]))
+            if (!coloredTiles.Contains(currentRoute.childTileColorList[tileIndex]))
             {
                 currentRoute.childTileColorList[tileIndex].material.color = Color.cyan;
                 coloredTiles.Add(currentRoute.childTileColorList[tileIndex]);
@@ -211,13 +210,13 @@ public class GameSystem : MonoBehaviourPunCallbacks
         {
             case "Fácil":
                 _quizzManagement.GetEasyRandomQuestion();
-            break;
+                break;
             case "Média":
                 _quizzManagement.GetMediumRandomQuestion();
-            break;
+                break;
             case "Difícil":
                 _quizzManagement.GetHardRandomQuestion();
-            break;
+                break;
         }
         _quizzManagement.BuildQuizz();
     }
@@ -234,7 +233,7 @@ public class GameSystem : MonoBehaviourPunCallbacks
         PlayerPiece.me.answeredRight = false;
         _quizzManagement.gameObject.SetActive(false);
     }
-          
+
     #endregion
 
     [PunRPC]

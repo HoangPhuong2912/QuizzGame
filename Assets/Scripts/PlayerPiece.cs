@@ -190,36 +190,36 @@ public class PlayerPiece : MonoBehaviourPunCallbacks
         }
 
         Color tileColor = currentRoute.childTileColorList[routePosition].material.color;
-        //Verificando casas com Quizz
-        //Pergunta Fácil
+        // Checking tiles with quiz
+        // Easy question
         if (tileColor == Color.green)
         {
-            GameSystem.Instance.StartQuizz("Fácil");
+            GameSystem.Instance.StartQuizz("Easy");
             onQuizz = true;
             return true;
         }
-        //Pergunta Média
+        // Medium question
         if (tileColor == Color.yellow)
         {
-            GameSystem.Instance.StartQuizz("Média");
+            GameSystem.Instance.StartQuizz("Medium");
             onQuizz = true;
             return true;
         }
 
-        //Pergunta Dificil
+        // Hard question
         if (tileColor == Color.red)
         {
-            GameSystem.Instance.StartQuizz("Difícil");
+            GameSystem.Instance.StartQuizz("Hard");
             onQuizz = true;
             return true;
         }
 
-        //Eventos não-quizz
+        // Non-quiz events
         if (tileColor == Color.cyan)
         {
-            // Gera um evento aleatório entre
-            // 0 - Volta o mesmo numero de casas que o dado
-            // 1 - Preso por uma rodada
+            // Generates a random event:
+            // 0 - Move back the same number of spaces as the dice
+            // 1 - Stuck for one turn
             int eventId = Random.Range(0, 2);
             EventsManagement.Instance.StartEvent(eventId);
             return true;

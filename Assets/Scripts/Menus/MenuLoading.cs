@@ -32,17 +32,13 @@ public class MenuLoading : MonoBehaviour
     {
         while (fillAmount < 1f)
         {
-            // Animation đầy thanh
             fillAmount += Time.deltaTime / fillDuration;
             loadingFill.fillAmount = Mathf.Clamp01(fillAmount);
-
-            // Animation chữ “Loading...”
             AnimateDots();
 
             yield return null;
         }
 
-        // Khi đầy hoàn toàn
         loadingFill.fillAmount = 1f;
         done = true;
         StartCoroutine(ShowConnected());
@@ -52,13 +48,12 @@ public class MenuLoading : MonoBehaviour
     {
         timer += Time.deltaTime * waveSpeed;
 
-        // "Loading" + ba chấm có hiệu ứng sóng
         string baseText = "Loading";
         string animated = baseText + " ";
 
         for (int i = 0; i < 3; i++)
         {
-            // tạo hiệu ứng nhảy theo sin
+            // animation jumping wave 
             float offset = Mathf.Sin(timer + i * 0.8f) * waveHeight;
             animated += $"<voffset={offset}px>.</voffset>";
         }
@@ -71,7 +66,6 @@ public class MenuLoading : MonoBehaviour
         loadingText.text = "Connected!";
         yield return new WaitForSeconds(0.5f);
 
-        // Gọi sang Menu chính (ví dụ Menu.cs)
         var menu = FindObjectOfType<Menu>();
         if (menu != null)
         {
@@ -79,7 +73,6 @@ public class MenuLoading : MonoBehaviour
         }
     }
 
-    // Nếu muốn cập nhật tiến trình thật
     public void SetProgress(float progress)
     {
         fillAmount = Mathf.Clamp01(progress);
